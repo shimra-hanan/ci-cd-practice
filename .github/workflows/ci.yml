@@ -1,0 +1,21 @@
+name: CI/CD Practice
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Simulate Install
+        run: echo "Installing dependencies..."
+
+      - name: Simulate Test
+        run: echo "Running tests..."
+
+      - name: Simulate Build
+        run: echo "Building the project..."
